@@ -143,7 +143,6 @@ export default {
         if (zIndex !== 1) {
           index = zIndex + '-' + i
         } else {
-          // path = '/routeD'
           index = i.toString()
         }
         if (!el.path.includes('/')) {
@@ -156,7 +155,6 @@ export default {
           path = arrPath.slice(0,-1).join('/')
           domList = domObj.lArr
         }
-        console.log(el.path)
         const dom = createElement('list-item', {
           props: {
             item: el,
