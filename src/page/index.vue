@@ -62,7 +62,7 @@ export default {
           this.routeInfo[k] = ''
         }
       }
-      const meanList = this.$refs.leftMean.meanList
+      const meanList = this.$store.getters.meanList
       const reduceFun = function (arr) {
         const routes = []
         for (let i = 0; i < arr.length; i++) {
@@ -100,7 +100,7 @@ export default {
           }
         }
       }
-      let obj = this.$refs.leftMean.meanList
+      let obj = this.$store.getters.meanList
       for (const el of arr) {
         if (obj.sonList) {
           obj = obj.sonList[el]
